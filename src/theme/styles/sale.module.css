@@ -1,0 +1,55 @@
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 20px;
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.title {
+  margin: 0;
+  font-family: var(--heading-font);
+  font-size: 22px;
+  font-weight: var(--heading-weight);
+  line-height: 1.2;
+  text-transform: var(--heading-case);
+}
+
+.lead {
+  margin: 0;
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+.button {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 22px;
+  border: 1px solid var(--accent-ink);
+  border-radius: var(--button-radius);
+  background: var(--accent-ink);
+  color: var(--accent);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.button:hover {
+  filter: brightness(0.94);
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}

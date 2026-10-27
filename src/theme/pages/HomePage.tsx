@@ -1,6 +1,7 @@
 import { Image, Link, useCollections, useProducts, useStorefront } from '@dripfunnel/storefront-core/theme'
 import { Layout } from '../components/Layout'
 import { GridPlaceholder, ProductGrid } from '../components/ProductCard'
+import { SaleBanner } from '../components/SaleBanner'
 import shop from '../styles/shop.module.css'
 import styles from '../styles/home.module.css'
 
@@ -10,6 +11,7 @@ export const HomePage = () => {
   const newest = useProducts({ sort: 'newest', first: 4 })
   return (
     <Layout>
+      <SaleBanner />
       <section className={styles.hero}>
         <div className={styles.copy}>
           <p className={styles.eyebrow}>{t('home.hero.eyebrow')}</p>
